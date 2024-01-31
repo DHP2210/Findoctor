@@ -1,0 +1,939 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  /* margin: 0; */
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 20.2px;
+}
+
+.main-container {
+  width: 85rem;
+  margin: 0 auto;
+}
+
+.nav {
+  background-color: rgba(255, 255, 255, 0.97);
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+  padding: 0 154px;
+}
+
+.nav-title img {
+  height: 38px;
+}
+
+.nav-links {
+  margin-top: 5px;
+}
+
+.nav>.nav-header {
+  display: inline;
+}
+
+.nav>.nav-header>.nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+  display: none;
+}
+
+.nav>.nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav>.nav-links>a:hover {
+  color: deeppink;
+  transition: 1s;
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+/**************************************/
+/* BANNER SECTION  */
+/**************************************/
+.hero-banner {
+  position: relative;
+  background: #3f4079 url(https://www.ansonika.com/findoctor/img/hero_home_bg_1.svg) no-repeat center bottom;
+  background-size: cover;
+  padding: 10rem 0 9.6rem 0;
+  /* height: 500px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-heading {
+  color: #fff;
+  font-size: 3.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.banner-content {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.search-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search {
+  height: 40px;
+  width: 70%;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  margin-right: -1px;
+}
+
+.btn-search {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 0;
+  padding: 0 25px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  background-color: #74d1c6;
+}
+
+.btn-search:hover {
+  background-color: deeppink;
+}
+
+.threebuttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  gap: 10px;
+}
+
+.threebuttons button {
+  color: #fff;
+  min-width: 80px;
+  border-radius: 3px;
+  border: none;
+  font-weight: bolder;
+  height: 23px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #74d1c6;
+}
+
+.button2,
+.button3 {
+  background-color: rgba(0, 0, 0, 0.456);
+}
+
+.button2:hover,
+.button3:hover {
+  background-color: deeppink;
+}
+
+/**************************************/
+/* DISCOVER THE ONLINE APPOINTMENT SECTION  */
+/**************************************/
+
+.discover {
+  padding: 5vw;
+  box-sizing: border-box;
+}
+
+.discover-section {
+  background-color: #f5f8fa;
+}
+
+.online-appointment {
+  text-align: center;
+  padding-top: 3vw;
+}
+
+.third-text {
+  font-weight: 300;
+  font-size: 35px;
+}
+
+.fourth-text {
+  font-size: 23px;
+  color: #777;
+  font-weight: 300;
+  padding: 0 10%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2vw;
+  margin-top: 3vw;
+  /* box-sizing: border-box; */
+}
+
+.doctor {
+  color: #fff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
+  height: 20vw;
+  width: calc(33.333% - 2vw);
+  border-radius: 10px;
+  margin-bottom: 3vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin-top: 1vw;
+  text-align: center;
+  color: #333;
+}
+
+.row-color {
+  color: #e74e84;
+  text-transform: uppercase;
+  font-size: 1.3125rem;
+  /* font-weight: 550; */
+  text-align: center;
+  /* margin-top: 1.5vw; */
+  margin-top: 25px;
+}
+
+.row-images {
+  height: 5vw;
+}
+
+
+
+.btn {
+  text-align: center;
+}
+
+
+
+.findoctor-btn {
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 2vw;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 36px;
+  color: #fff;
+  background-color: deeppink;
+  cursor: pointer;
+  /* font-weight:600; */
+}
+
+.findoctor-btn:hover {
+  background-color: teal;
+  transition: all 1s;
+}
+
+/**************************************/
+/* MOST VIEWED DOCTORS SECTION  */
+/**************************************/
+
+.most-viewed-doctors {
+  padding-top: 120px;
+  padding-bottom: 95px;
+}
+
+.most-viewed {
+  text-align: center;
+  font-weight: 300;
+  font-size: 33px;
+  color: #333;
+}
+
+.most {
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  color: #777;
+}
+
+.doctors {
+  margin-top: 25px;
+  height: 0%;
+}
+
+/**************************************/
+/* FIND YOUR DOCTOR OR CLINIC SECTION  */
+/**************************************/
+.clinic-section {
+  padding: 0;
+  /* text-align: center; */
+}
+
+
+.clinic-text-box {
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 16rem 5rem 16rem;
+}
+
+.clinic-title {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.clinic-text {
+  color: #777;
+  font-size: 1.35rem;
+}
+
+.name-list {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+}
+
+.container {
+  background: #f5f8fa;
+}
+
+.container.clinic {
+  background: #f5f8fa;
+  padding-top: 120px;
+}
+
+.container.search-by {
+  padding-bottom: 95px;
+}
+
+.name-text {
+  list-style: none;
+  position: relative;
+}
+
+.name-text a {
+  width: 25rem;
+  display: block;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  color: black;
+  /* border: 2px solid black; */
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  transition: all 0.5s ease;
+}
+
+.arrow {
+  position: relative;
+}
+
+.arrow::before {
+  content: "\2192";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: black;
+}
+
+.arrow::after {
+  content: "\2192";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+
+}
+
+.name-text a:hover {
+  background-color: #d63384;
+  color: white;
+  transform: scale(1.05);
+}
+
+.search-card {
+  text-align: center;
+  background-color: #3f4079;
+  height: 7rem;
+  border-radius: 4px;
+  padding: 1rem 0;
+}
+
+.name-icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.name-title {
+  color: #74d1c6;
+  text-transform: uppercase;
+}
+
+/**************************************/
+/* DISCOVER THE ONLINE APPOINTMENT SECTION  */
+/**************************************/
+
+.download-app {
+  padding: 100px 0 60px 0;
+  background-color: #3f4079;
+  color: #fff;
+}
+
+.second-last {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  padding-bottom: 24px;
+}
+
+.application {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+p.last-description {
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+
+.description-heading {
+  text-transform: uppercase;
+  color: #fff;
+  /* font-size: 2rem; */
+  margin-top: 5px;
+}
+
+.description-heading strong {
+  color: yellow;
+}
+
+.last-description {
+  margin-top: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.googlemap-img {
+  max-width: 100%;
+}
+
+#map-img {
+  height: 22rem;
+}
+
+.content-images {
+  display: flex;
+  padding-top: 3rem;
+  gap: 5px;
+}
+
+.appstore-img,
+.googleplay-img {
+  height: 3rem;
+}
+
+/***************************/
+/*     FOOTER SECTION     */
+/**************************/
+
+.footer {
+  color: #555;
+  background-color: #fff;
+  padding: 51px 0 2px;
+  box-sizing: border-box;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+
+.footer-img {
+  flex: 1 1 170%;
+  text-align: center;
+}
+
+.footer-img img {
+  height: 38px;
+}
+
+.about-footer {
+  flex: 1 1 100%;
+  cursor: pointer;
+}
+
+.about-column {
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.about-column:hover {
+  color: deeppink;
+}
+
+.about-column:hover::after {
+  content: "\2192";
+  color: deeppink;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+}
+
+.contact-info:hover {
+  color: deeppink;
+}
+
+#about {
+  color: #777;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.follow {
+  color: #777;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  font-size: 12px;
+}
+
+.sepration-1 {
+  margin-top: 1rem;
+}
+
+li.contact-info i {
+  color: deeppink !important;
+}
+
+.social-icon {
+  display: flex;
+  margin-top: 1rem;
+  display: flex;
+  margin-top: 1rem;
+  gap: 10%;
+}
+
+.social-icons {
+  margin: 0 1px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-camera {
+  color: #555;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover,
+.fa-camera:hover {
+  color: deeppink;
+}
+
+hr {
+  margin: 3rem 2rem;
+  color: #ededed;
+  opacity: 3;
+}
+
+.last-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px 43px;
+}
+
+li.privacy-content, .last-findoctor li {
+  color: #555;
+}
+
+.last-section {
+  padding-bottom: 5%;
+}
+
+.last-findoctor {
+  flex: 1 1 50%;
+  text-align: right;
+}
+
+li.privacy-content {
+  display: inline-block;
+}
+
+ul.privacy {
+  padding: 0;
+}
+
+ul.privacy li.privacy-content:first-child::after {
+  content: "|";
+  position: relative;
+  left: 10px;
+}
+
+li.privacy-content:last-child {
+  margin-left: 18px;
+}
+
+.owl-item>div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+
+.owl-item.center>div {
+  cursor: auto;
+  margin: 0;
+}
+
+.owl-item:not(.center)>div:hover {
+  opacity: .75;
+}
+
+.ionicon {
+  height: 30px;
+  margin-top: 10px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .nav>.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+
+  .nav>.nav-btn>label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav>.nav-btn>label:hover,
+  .nav #nav-check:checked~.nav-btn>label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav>.nav-btn>label>span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+    color: #eee;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  /* banner */
+
+  .search {
+    width: 80%;
+    margin-right: 0;
+  }
+
+
+
+  /* Discover section */
+
+  .doctor {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2); */
+    padding: 60px 45px 60px 45px;
+
+  }
+
+  .row-images {
+    height: 100px;
+  }
+
+
+  .fourth-text{
+    font-size: 22px;
+  }
+
+  /* Most viewed Doctor section*/
+
+  .most {
+    font-size: 30px;
+    font-weight:lighter;
+  }
+
+ /* clinic section */
+ .clinic-text-box {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.name-list {
+  flex-direction: row;
+  gap: 2rem;
+}
+.container.search-by {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+
+.name-content {
+  width: 100%;
+}
+
+.name-text a {
+  width: 100%;
+}
+
+  .googlemap-img {
+    flex: 1; /* Allow map image to grow */
+  }
+
+  .description {
+    flex: 1; /* Allow description to grow */
+  }
+
+  #map-img {
+    height: 17rem;
+  }
+
+  /* footer section */
+
+  .last-findoctor {
+    margin-right: 3rem;
+  }
+
+  ul.privacy {
+    padding: 0;
+  }
+
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4%;
+  }
+
+  .footer-img {
+    order: 0;
+    text-align: left;
+  }
+
+  .about-footer {
+    flex: 1 1 auto;
+    width: 30%;
+  }
+
+}
+
+
+
+@media (max-width:430px) {
+
+    /* Banner section */
+   
+    .banner-heading{
+       font-size: 32px;
+    }
+
+    .banner-content{
+      font-size: 19px;
+    }
+
+    .search-section {
+      width: 92%;
+    }
+
+    .btn-search {
+      width: 20%;
+      padding-left: 11px;
+    }
+
+    .third-text {
+        font-size: 22px;
+    }
+
+      .fourth-text{
+        font-size: 14px;
+      }
+
+
+      /* Discover section */
+
+      .findoctor-btn {
+         width: 134px;
+         height: 38px;
+      }
+      
+      .box {
+         text-align: center;
+      }
+
+
+      /* Most visited doctor section*/
+
+      .most-viewed {
+        font-size: 24px;
+      }
+
+      .most {
+        font-size: 19px;
+      }
+
+      /* Clinic section*/
+
+      .clinic-title {
+        font-size: 21px;
+      }
+
+      .clinic-text {
+        font-size: 18px;
+      }
+
+      /* clinic section */
+
+      .name-list {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      /* google-map image section*/
+
+      .second-last {
+        flex-direction: column;
+      }
+
+      #map-img {
+        padding:0px 0px 0px 23px;
+      }
+      
+      .description {
+        margin-top: 35px;
+        margin-left: 9px;
+      }
+
+      .description-heading {
+          font-size: 30px;
+      }
+
+      /* footer section */
+
+      .footer-row {
+        flex-direction: column;
+        padding-left: 2%;
+      }
+
+      .contact-info {
+        font-size: 12px;
+        margin-right: 2px;
+      }
+
+      .contact-with-us {
+        padding-left: 2px;
+      }
+      
+      
+
+      /* hr line */
+      hr {
+        margin: 32px 21px 30px 19px;
+      }
+
+     /* last row section */
+       
+      .last-row {
+        flex-direction: column;
+        margin-left: 18px;
+        /* color: #999; */
+      }
+     .privacy {
+        color: #999;
+     }
+     .last-row {
+      color: #999;
+     } 
+
+     /* .last-section {
+      color: #999;
+     }  */
+
+     /* .last-findoctor {
+        justify-content: flex-start;
+     } */
+}
